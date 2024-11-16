@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MBTI 계산기</title>
+  </head>
+  <body>
+    <h1>MBTI 계산기</h1>
+    <p>콘솔을 열어 결과를 확인하세요.</p>
+    <script type="module">
+      import { calculateMBTI } from "./mbti.js";
+
+      const userAnswers = [
+        "매우 아니다",
+        "그렇다",
+        "매우 아니다",
+        "아니다",
+        "보통이다",
+        "보통이다",
+        "매우 아니다",
+        "매우 아니다",
+      ];
+
+      const result = calculateMBTI(userAnswers);
+      console.log("당신의 MBTI 결과는:", result);
+      alert("당신의 MBTI 결과는: " + result);
+    </script>
+  </body>
+</html>
